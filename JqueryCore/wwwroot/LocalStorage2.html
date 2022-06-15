@@ -72,13 +72,13 @@
 
             for (var i = 0; i < localStorage.length; i++) {
                 key = localStorage.key(i);
-                pairs += "<tr><td>" + key + "</td>\n<td>" + localStorage.getItem(key)+"</td></tr>\n"
+                pairs += "<tr><td>" + key + "</td>\n<td>" + localStorage.getItem(key) + "</td></tr>\n";
             }
             //Eger pairs degişkeninde her hangi bir deger yok ise 
             if (pairs == "<tr><th>Name</th><th>Value</th></tr>\n") {
                 pairs += "<tr><td><i>empty</i></td><td><i>empty</i></td></tr>\n"
             }
-            document.getElementById("#pairs").innerHTML = pairs;
+            document.getElementById("pairs").innerHTML = pairs;
 
         }
         function doSetItem() {
