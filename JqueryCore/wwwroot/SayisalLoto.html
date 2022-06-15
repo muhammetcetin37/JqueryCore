@@ -58,7 +58,10 @@
                 toplar.forEach((index) => { console.log(index) });
                 $(".top").css({ "background": "rgba(59,182,233,1.00)" });
                 $(".top").each(function (index, element) {
-
+                    var kutuSayi = Number($(element).html());
+                    if (toplar.indexOf(kutuSayi) >= 0) {
+                        $(element).css({ "background": "red" });
+                    }
                 });
             };
         });
